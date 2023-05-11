@@ -5,27 +5,6 @@ import utils
 
 
 class Rocket(object):
-    """
-    Rocekt and environment.
-    The rocket is simplified into a rigid body model with a thin rod,
-    considering acceleration and angular acceleration and air resistance
-    proportional to velocity.
-
-    There are two tasks: hover and landing
-    Their reward functions are straight forward and simple.
-
-    For the hover tasks: the step-reward is given based on two factors
-    1) the distance between the rocket and the predefined target point
-    2) the angle of the rocket body (the rocket should stay as upright as possible)
-
-    For the landing task: the step-reward is given based on three factors:
-    1) the distance between the rocket and the predefined landing point.
-    2) the angle of the rocket body (the rocket should stay as upright as possible)
-    3) Speed and angle at the moment of contact with the ground, when the touching-speed
-    are smaller than a safe threshold and the angle is close to 90 degrees (upright),
-    we see it as a successful landing.
-
-    """
 
     def __init__(self, max_steps, task='hover', rocket_type='falcon',
                  viewport_h=768, path_to_bg_img=None):

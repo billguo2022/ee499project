@@ -1,7 +1,6 @@
 import numpy as np
 import cv2
 
-################ Some helper functions... ####################
 
 def moving_avg(x, N=500):
 
