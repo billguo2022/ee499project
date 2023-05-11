@@ -1,4 +1,7 @@
 
+Acknowledgement
+Since the purpose of the class is on machine learning, also due to time constraints, I used Mr. Zhengxia Zhou’s environment for the project (the environment contains the rocket dynamics animation drawing). The learning and policy part of the project is completely my own work.This project presents Deep Q learning while the original project uses Actor Critic learning. Deep Q learning  is advantageous over Actor-Critic in terms of being more robust to noisy data, having more stable training, and being able to handle large state space. 
+
 Policy code: 
 MLP (Multilayer Perceptron) class:
 This class defines a feedforward neural network architecture that takes an input of input_dim dimensions and outputs a vector of output_dim dimensions.
